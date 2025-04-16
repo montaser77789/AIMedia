@@ -11,9 +11,10 @@ const LanguageSwitcher = () => {
   const locale = pathname.startsWith('/ar') ? 'ar' : 'en';
 
   const switchLanguage = (newLocale: string) => {
-    const path = pathname.replace(`/${locale}`, `/${newLocale}`) ?? `/${newLocale}`;
+    const path = pathname?.replace(`/${locale}`, `/${newLocale}`) ?? `/${newLocale}`;
     router.push(path);
   };
+  
 
   return (
     <div className="flex">
