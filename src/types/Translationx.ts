@@ -1,0 +1,31 @@
+export type Translations = {
+  navbar: {
+    About_Us: string;
+    what_we_do: string;
+    partners: string;
+    protofolio: string;
+    blog: string;
+    contact: string;
+  };
+  hero: {
+    title: string;
+    description: string;
+    learn_more: string;
+    get_started: string;
+    consultation: string;
+    projects: string;
+    projects_description: string;
+    clients: string;
+    rating: string;
+    team: {
+      hanida: {
+        name: string;
+        desc: string;
+      };
+      gamalin: {
+        name: string;
+        desc: string;
+      };
+    };
+  };
+};

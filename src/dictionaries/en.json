@@ -1,0 +1,31 @@
+{
+  "navbar": {
+    "About_Us": "About Us",
+    "what_we_do": "What we do",
+    "partners": "Partners",
+    "protofolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+ "hero": {
+  "title": "Elevate Your Brand with AIMedia Om Solutions 🚀",
+  "description": "An innovative media and marketing company focused on storytelling that drives results. Our mission is to grow revenue and sales through marketing campaigns and tailored content creation with our successful video formula.",
+  "learn_more": "Learn More",
+  "get_started": "Get Started",
+  "consultation": "Free Consultation",
+  "projects": "1200+ Projects",
+  "projects_description": "With a rich portfolio of over 1200 projects, our marketing agency stands as a testament.",
+  "clients": "99+ Clients",
+  "rating": "4.7/5",
+  "team": {
+    "hanida": {
+      "name": "Hanida Jelly",
+      "desc": "Dynamic and creative minds, driven by a shared passion."
+    },
+    "gamalin": {
+      "name": "Gamalin Aryo",
+      "desc": "From staying ahead of industry trends to pioneering new paths."
+    }
+  }
+}
+}
