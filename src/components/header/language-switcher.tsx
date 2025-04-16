@@ -1,29 +1,32 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
+import { Languages } from "../constants/enum";
 import { Button } from "../ui/button";
 
 const LanguageSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
-
-  // احصل على اللغة الحالية من المسار
-  const locale = pathname.startsWith('/ar') ? 'ar' : 'en';
+  const { locale } = useParams();
 
   const switchLanguage = (newLocale: string) => {
-    const path = pathname?.replace(`/${locale}`, `/${newLocale}`) ?? `/${newLocale}`;
+    const path =
+      pathname?.replace(`/${locale}`, `/${newLocale}`) ?? `/${newLocale}`;
     router.push(path);
   };
-  
 
   return (
     <div className="flex">
-      {locale === 'ar' ? (
-        <Button onClick={() => switchLanguage('en')}>
+      {locale === Languages.ARABIC ? (
+        <Button
+          onClick={() => switchLanguage(Languages.ENGLISH)}
+        >
           English
         </Button>
       ) : (
-        <Button onClick={() => switchLanguage('ar')}>
+        <Button
+          onClick={() => switchLanguage(Languages.ARABIC)}
+        >
           العربية
         </Button>
       )}
