@@ -11,7 +11,7 @@ const Header = async () => {
   const locale = await getCurrentLocale();
   const translations = await getTrans(locale);
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
+    <header className="absolute top-0 left-0 w-full z-50">
       <div className="container flex items-center justify-between gap-6 lg:gap-10">
         <Link  href={`/${locale}`}>
           <Image 
