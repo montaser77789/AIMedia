@@ -16,19 +16,15 @@ const Navbar = ({ translations }: { translations: Translations }) => {
   const links = [
     {
       id: crypto.randomUUID(),
-      title: translations.navbar.what_we_do,
-      href: Routes.WHAT_WE_DO,
+      title: translations.navbar.home,
+      href: Routes.HOME,
     },
     {
       id: crypto.randomUUID(),
-      title: translations.navbar.About_Us,
-      href: Routes.ABOUT_US,
+      title: translations.navbar.services,
+      href: Routes.SERVICES,
     },
-    {
-      id: crypto.randomUUID(),
-      title: translations.navbar.partners,
-      href: Routes.PARTNERS,
-    },
+
     {
       id: crypto.randomUUID(),
       title: translations.navbar.protofolio,
@@ -57,7 +53,6 @@ const Navbar = ({ translations }: { translations: Translations }) => {
         <Menu className="!w-6 !h-6" />
       </Button>
       <ul
-
         className={`fixed lg:static ${
           openMenu ? "left-0 z-50 !w-3/4" : "-left-full"
         } top-0 px-10 py-20 lg:p-0 bg-gradient-to-br from-[#1e3a8a] via-[#6d28d9] to-[#ec4899]
@@ -81,7 +76,7 @@ const Navbar = ({ translations }: { translations: Translations }) => {
               className={`font-semibold hover:text-primary duration-200 transition-colors ${
                 pathname === `/${locale}/${link.href}`
                   ? "text-primary"
-                  : "text-accent"
+                  : "text-black"
               }`}
               href={`/${locale}/${link.href}`}
             >

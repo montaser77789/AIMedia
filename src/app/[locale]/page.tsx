@@ -1,13 +1,24 @@
 import getTrans from "@/lib/translation";
-import HeroSection from "./_components/HeroSection";
 import { getCurrentLocale } from "@/lib/getCurrentLocale";
+import BrandoHero from "./_components/BrandoHero";
+import TeamSection from "./_components/TeamSection";
+import AmazingServices from "./_components/AmazingServices";
+import { QuestionSection } from "./_components/QuestionSection";
+import PartnersSection from "./_components/PartnersSection";
+import { HeroSection } from "./_components/HeroSection";
 
-export default  async function Home() {
+export default async function Home() {
   const locale = await getCurrentLocale();
   const translations = await getTrans(locale);
   return (
-    <div >
+    <div>
       <HeroSection translations={translations} />
+      <BrandoHero />
+      <TeamSection />
+      <AmazingServices />
+      <PartnersSection />
+      <QuestionSection />
     </div>
   );
 }
+

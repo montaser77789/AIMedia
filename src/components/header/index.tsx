@@ -3,7 +3,7 @@ import getTrans from "@/lib/translation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "../../../public/images/aii-png.png"
+import logo from "../../../public/images/aii-png.png";
 import Navbar from "./Navbar";
 import LanguageSwitcher from "./language-switcher";
 
@@ -13,18 +13,12 @@ const Header = async () => {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
       <div className="container flex items-center justify-between gap-6 lg:gap-10">
-        <Link  href={`/${locale}`}>
-          <Image 
-          src={logo}
-          alt="logo"
-          width={100}
-          height={100}
-          />
+        <Link href={`/${locale}`}>
+          <Image src={logo} alt="logo" width={100} height={100} />
         </Link>
         <Navbar translations={translations} />
         <div className="hidden lg:flex lg:items-center lg:gap-6 ">
-
-        <LanguageSwitcher  />
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

@@ -2,6 +2,15 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("/font/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -130,3 +139,14 @@ html[lang="en"] div[role="dialog"] button {
   }
 }
 
+@keyframes ultraFastFade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.animate-ultraFastFade {
+  animation: ultraFastFade 4s infinite;
+}

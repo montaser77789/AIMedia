@@ -1,14 +1,14 @@
 {
   "navbar": {
-    "About_Us": "About Us",
-    "what_we_do": "What we do",
-    "partners": "Partners",
+
+    "services": "Services",
+    "home": "Home",
     "protofolio": "Portfolio",
     "blog": "Blog",
     "contact": "Contact"
   },
  "hero": {
-  "title": "Elevate Your Brand with AIMedia Om Solutions 🚀",
+  "title": "Elevate Your Brand with AIMedia Solutions 🚀",
   "description": "An innovative media and marketing company focused on storytelling that drives results. Our mission is to grow revenue and sales through marketing campaigns and tailored content creation with our successful video formula.",
   "learn_more": "Learn More",
   "get_started": "Get Started",
