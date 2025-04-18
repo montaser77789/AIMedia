@@ -5,7 +5,6 @@ import { Locale } from "@/i18n.config";
 import { Directions, Languages } from "@/components/constants/enum";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import NextAuthSessionProvider from "../providers/NextAuthSessionProvider";
 
 const robote = Roboto({
   subsets: ["latin"],
