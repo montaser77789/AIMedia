@@ -40,6 +40,11 @@ const Navbar = ({ translations }: { translations: Translations }) => {
       title: translations.navbar.contact,
       href: Routes.CONTACT,
     },
+    {
+      id: crypto.randomUUID(),
+      title: translations.navbar.socialmedia,
+      href: Routes.SOCIALMEDIA,
+    },
   ];
 
   return (
@@ -55,7 +60,7 @@ const Navbar = ({ translations }: { translations: Translations }) => {
       <ul
         className={`fixed lg:static ${
           openMenu ? "left-0 z-50 !w-3/4" : "-left-full"
-        } top-0 px-10 py-20 lg:p-0 bg-gradient-to-br from-[#1e3a8a] via-[#6d28d9] to-[#ec4899]
+        } top-0 z-50 px-10 py-20 lg:p-0 bg-gradient-to-br from-[#1e3a8a] via-[#6d28d9] to-[#ec4899]
          md:bg-none transition-all duration-200 h-full lg:h-auto flex-col lg:flex-row w-full lg:w-auto flex items-start lg:items-center gap-10`}
       >
         {/* Close button */}

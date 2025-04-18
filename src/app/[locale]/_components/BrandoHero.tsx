@@ -76,7 +76,7 @@ const BrandoHero = () => {
               brands—we shape what&apos;s next.
             </p>
 
-            <Button className="rounded-full px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base">
+            <Button   className="rounded-full px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base">
               Learn More
             </Button>
           </div>

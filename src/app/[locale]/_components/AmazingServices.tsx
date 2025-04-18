@@ -69,8 +69,8 @@ const AmazingServices = () => {
               </div>
               <div className="mt-4 text-left">
               <span className="inline-flex items-center text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">
-                <Link  href={Routes.SERVICES}>Learn more</Link>
-                <svg className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <Link className="text-primary" href={Routes.SERVICES}>Learn more</Link>
+                <svg className="ml-1 w-4 h-4 text-primary transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </span>

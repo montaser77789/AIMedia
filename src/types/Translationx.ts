@@ -6,6 +6,7 @@ export type Translations = {
     protofolio: string;
     blog: string;
     contact: string;
+    socialmedia: string
   };
   hero: {
     title: string;

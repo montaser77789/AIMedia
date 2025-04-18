@@ -5,6 +5,7 @@ import { Locale } from "@/i18n.config";
 import { Directions, Languages } from "@/components/constants/enum";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import NextAuthSessionProvider from "../providers/NextAuthSessionProvider";
 
 const robote = Roboto({
   subsets: ["latin"],
@@ -21,7 +22,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default async function RootLayout({
   params,
   children,
@@ -35,12 +35,14 @@ export default async function RootLayout({
       lang={local}
       dir={local === Languages.ARABIC ? Directions.RTL : Directions.LTR}
     >
-      
       <body className={robote.className}>
-        <Header />
+        <NextAuthSessionProvider>
 
-        {children}
-        <Footer />
+          <Header />
+
+          {children}
+          <Footer />
+        </NextAuthSessionProvider>
       </body>
     </html>
   );

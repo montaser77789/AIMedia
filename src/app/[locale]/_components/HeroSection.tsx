@@ -30,7 +30,7 @@ export const HeroSection = ({ translations }: { translations: Translations }) =>
           />
 
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-lime-300 text-black px-6 py-2 rounded-full text-sm hover:bg-lime-400 transition-colors">
+            <Button className=" px-6 py-2 rounded-full text-sm  transition-colors">
               {translations.hero.learn_more}
             </Button>
             <Button

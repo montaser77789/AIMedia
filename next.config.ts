@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
 
   async rewrites() {
     return [
+      // استثناء المسارات API من التوجيه
+      {
+        source: "/api/:path*",
+        destination: "/api/:path*",
+      },
       {
         source: "/en/:path*",
         destination: "/en/:path*", // إعادة توجيه للصفحات باللغة الإنجليزية
@@ -30,3 +35,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+

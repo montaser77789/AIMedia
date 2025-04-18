@@ -10,11 +10,13 @@ export enum Languages {
 
 export enum Routes {
   SERVICES = "services",
-
+  AUTH = "auth",
+  ADMIN = "admin",
   HOME = "/",
   PORTFOLIO = "portfolio",
   BLOG = "blog",
   CONTACT = "contact",
+  SOCIALMEDIA = "socialmedia",
 }
 
 export enum Pages {

@@ -26,15 +26,13 @@ const PartnersSection = () => {
 
         {/* Logo marquee container */}
         <div className="relative">
-          {/* Fade effects on sides */}
-
           {/* First marquee row */}
           <div className="flex mb-8">
             <div className="animate-marquee flex space-x-8 pr-8">
               {PartnersLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 flex items-center justify-center  p-1   transition-all duration-300"
+                  className="flex-shrink-0 flex items-center justify-center p-1 transition-all duration-300 hover:grayscale-0 grayscale"
                   style={{ width: "160px", height: "160px" }}
                 >
                   <Image
@@ -42,7 +40,7 @@ const PartnersSection = () => {
                     alt="Partner Logo"
                     width={120}
                     height={120}
-                    className="w-[120px] h-[120px] "
+                    className="w-[120px] h-[120px] object-contain"
                   />
                 </div>
               ))}
@@ -54,7 +52,7 @@ const PartnersSection = () => {
               {PartnersLogos.map((logo, index) => (
                 <div
                   key={`dup-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center  p-1  "
+                  className="flex-shrink-0 flex items-center justify-center p-1 grayscale"
                   style={{ width: "160px", height: "160px" }}
                 >
                   <Image
@@ -62,48 +60,7 @@ const PartnersSection = () => {
                     alt="Partner Logo"
                     width={120}
                     height={120}
-                    className="w-[120px] h-[120px] "
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Second marquee row (reverse direction) */}
-          <div className="flex">
-            <div className="animate-marqueeReverse flex space-x-8 pr-8">
-              {[...PartnersLogos].reverse().map((logo, index) => (
-                <div
-                  key={`rev-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center  p-1   transition-all duration-300"
-                  style={{ width: "160px", height: "160px" }}
-                >
-                  <Image
-                    src={logo}
-                    alt="Partner Logo"
-                    width={120}
-                    height={120}
-                    className="w-[120px] h-[120px] "
-                  />
-                </div>
-              ))}
-            </div>
-            <div
-              className="animate-marqueeReverse flex space-x-8 pr-8"
-              aria-hidden="true"
-            >
-              {[...PartnersLogos].reverse().map((logo, index) => (
-                <div
-                  key={`rev-dup-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center  p-1 "
-                  style={{ width: "160px", height: "160px" }}
-                >
-                  <Image
-                    src={logo}
-                    alt="Partner Logo"
-                    width={120}
-                    height={120}
-                    className="w-[120px] h-[120px] "
+                    className="w-[120px] h-[120px] object-contain"
                   />
                 </div>
               ))}
@@ -122,19 +79,8 @@ const PartnersSection = () => {
             transform: translateX(-50%);
           }
         }
-        @keyframes marqueeReverse {
-          0% {
-            transform: translateX(-50%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
         .animate-marquee {
-          animation: marquee 30s linear infinite;
-        }
-        .animate-marqueeReverse {
-          animation: marqueeReverse 35s linear infinite;
+          animation: marquee 20s linear infinite;
         }
       `}</style>
     </section>
