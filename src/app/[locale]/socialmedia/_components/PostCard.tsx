@@ -36,6 +36,8 @@ export default function DesignSection({
             src={image.imageUrl}
             caption={image.caption}
           />
+
+          
         ))}
       </div>
       <div className="mt-16 text-center" data-aos="fade-up">
