@@ -17,7 +17,7 @@ export const login = async (
   }
 
   try {
-    const user = await db.user.findUnique({
+    const user = await db.User.findUnique({
       where: {
         email: result.data.email,
       },
