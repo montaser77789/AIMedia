@@ -36,13 +36,11 @@ export default async function RootLayout({
       dir={local === Languages.ARABIC ? Directions.RTL : Directions.LTR}
     >
       <body className={robote.className}>
-        <NextAuthSessionProvider>
 
           <Header />
 
           {children}
           <Footer />
-        </NextAuthSessionProvider>
       </body>
     </html>
   );
