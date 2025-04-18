@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "**", // يسمح بالصور من أي مضيف بعيد
       },
     ],
   },
@@ -13,26 +13,30 @@ const nextConfig: NextConfig = {
 
   async rewrites() {
     return [
-      // استثناء المسارات API من التوجيه
+      // إعادة توجيه المسارات API (تأكد من أن API تعمل بشكل صحيح)
       {
         source: "/api/:path*",
-        destination: "/api/:path*",
+        destination: "/api/:path*", 
       },
+      // مسارات اللغة الإنجليزية
       {
         source: "/en/:path*",
-        destination: "/en/:path*", // إعادة توجيه للصفحات باللغة الإنجليزية
+        destination: "/en/:path*", 
       },
+      // مسارات اللغة العربية
       {
         source: "/ar/:path*",
-        destination: "/ar/:path*", // إعادة توجيه للصفحات باللغة العربية
+        destination: "/ar/:path*", 
       },
+      // إعادة توجيه جميع المسارات غير المعروفة إلى اللغة الافتراضية (الإنجليزية)
       {
         source: "/:path*",
-        destination: "/en/:path*", // إعادة توجيه لجميع المسارات غير المعروفة إلى اللغة الافتراضية
+        destination: "/en/:path*", 
       },
     ];
   },
+
+
 };
 
 export default nextConfig;
-

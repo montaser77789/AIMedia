@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    {
+      "source": "/((?!ar|en).*)",
+      "destination": "/"
+    }
+  ],
   "name": "markiting-agancy",
   "version": "0.1.0",
   "private": true,
