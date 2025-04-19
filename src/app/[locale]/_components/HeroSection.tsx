@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 import { Translations } from "@/types/Translationx";
 
 const images = [
-  "https://media.licdn.com/dms/image/v2/D4E12AQHuRQYQs_8vvA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1679471108342?e=2147483647&v=beta&t=jN3Ij1IgujiyMZ5zAJNJWE1l3hzhgWC7mveoYquRp1k",
+  "https://cdn.prod.website-files.com/642acdbc8f82ca0bc204f698/645c83e76df474b979968a99_banner1.jpg",
   "https://cloudinary.hbs.edu/hbsit/image/upload/s--jcW2HPqC--/f_auto,c_fill,h_375,w_750,/v20200101/EA99CC738B99D0AA67987EC2976D550F.jpg",
   "https://assetdigitalcom.com/wp-content/uploads/2023/05/B2B-Digital-Marketing-Agency-scaled.jpeg",
 ];

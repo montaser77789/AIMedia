@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import logo2 from "../../../../public/images/aii-png - Copy.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import AOS from "aos";
@@ -24,38 +23,8 @@ const BrandoHero = () => {
           {/* Image Column */}
           <div
             data-aos="fade-up"
-            className="relative md:mr-6 aspect-square w-full max-w-[400px] md:max-w-[500px] mx-auto bg-white rounded-3xl md:rounded-4xl"
+            className="relative  aspect-square w-full max-w-[400px] md:max-w-[500px] mx-auto bg-white rounded-3xl md:rounded-4xl"
           >
-            {/* Top Right Card */}
-            <div className="flex items-center gap-2 sm:gap-3 bg-white p-3 sm:p-4 lg:p-5 absolute top-2 sm:top-4 md:top-[-20px] right-2 sm:right-4 md:right-[-40px] lg:right-[-20px] rounded-3xl md:rounded-4xl z-50 shadow-lg">
-              <Image
-                src={logo2}
-                alt="Brando Studio"
-                width={60}
-                height={60}
-                className="w-10 h-10 sm:w-14 sm:h-14 md:w-[60px] md:h-[60px] lg:w-[80px] lg:h-[80px]"
-              />
-              <div className="flex flex-col text-xs sm:text-sm md:text-base">
-                <span className="font-medium">Brando</span>
-                <span className="text-black">@brando.studio</span>
-              </div>
-            </div>
-
-            {/* Bottom Left Card */}
-            <div className="flex items-center gap-2 sm:gap-3 bg-white p-3 sm:p-4 lg:p-5 absolute bottom-2 sm:bottom-4 md:bottom-[-20px] left-2 sm:left-4 md:left-[-40px] lg:left-[-60px] rounded-3xl md:rounded-4xl z-50 shadow-lg">
-              <Image
-                src={logo2}
-                alt="Brando Studio"
-                width={60}
-                height={60}
-                className="w-10 h-10 sm:w-14 sm:h-14 md:w-[60px] md:h-[60px] lg:w-[80px] lg:h-[80px]"
-              />
-              <div className="flex flex-col text-xs sm:text-sm md:text-base">
-                <span className="font-medium">Brando</span>
-                <span className="text-black">@brando.studio</span>
-              </div>
-            </div>
-
             {/* Main Image */}
             <div className="absolute inset-0 m-4 sm:m-6 md:m-8 lg:m-10 xl:m-14 bg-gradient-to-r from-[#211F97] to-[#F080DD] rounded-2xl md:rounded-3xl border-4 sm:border-6 md:border-8 border-[#B3E8FF]">
               <div className="w-full h-full flex items-center justify-center p-4">
@@ -81,14 +50,14 @@ const BrandoHero = () => {
             </h2>
 
             <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed sm:leading-loose">
-              At Ai Media, we don&apos;t just follow digital trends—we create them.
-              We are a team of passionate innovators, strategists, and creators
-              dedicated to shaping the future of brands in the ever-evolving
-              digital world. Inspired by industry leaders like Nascode, we merge
-              creativity with cutting-edge technology to deliver powerful
-              results. From concept to execution, we transform your vision into
-              a compelling digital experience. At Ai Media, we don&apos;t just build
-              brands—we shape what&apos;s next.
+              At Ai Media, we don&apos;t just follow digital trends—we create
+              them. We are a team of passionate innovators, strategists, and
+              creators dedicated to shaping the future of brands in the
+              ever-evolving digital world. Inspired by industry leaders like
+              Nascode, we merge creativity with cutting-edge technology to
+              deliver powerful results. From concept to execution, we transform
+              your vision into a compelling digital experience. At Ai Media, we
+              don&apos;t just build brands—we shape what&apos;s next.
             </p>
 
             <Button className="rounded-full px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base">

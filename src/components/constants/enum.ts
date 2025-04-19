@@ -13,7 +13,7 @@ export enum Routes {
   AUTH = "auth",
   ADMIN = "admin",
   HOME = "/",
-  PORTFOLIO = "portfolio",
+  OURWORK = "our-work",
   BLOG = "blog",
   CONTACT = "contact",
   SOCIALMEDIA = "socialmedia",
@@ -29,6 +29,7 @@ export enum Pages {
   ORDERS = "orders",
   NEW = "new",
   EDIT = "edit",
+  QUESTIONS = "questions",
 }
 
 export enum InputTypes {

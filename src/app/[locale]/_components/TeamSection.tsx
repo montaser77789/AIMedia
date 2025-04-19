@@ -35,7 +35,7 @@ const TeamSection = () => {
       {/* Gradient background */}
       <div className="absolute top-0 left-0 w-full md:w-[60%] h-full bg-gradient-to-r from-[#f7d9fb] to-white z-0" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-black relative">
+      <div className="  text-black relative">
         {/* Section title */}
         <div className="relative z-10 text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-black">

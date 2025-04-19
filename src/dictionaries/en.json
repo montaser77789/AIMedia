@@ -3,10 +3,16 @@
 
     "services": "Services",
     "home": "Home",
-    "protofolio": "Portfolio",
+    "ouserwork": "Our Work",
     "blog": "Blog",
     "contact": "Contact",
     "socialmedia": "Social Media"
+  },
+  "admin": {
+    "tabs": {
+      "question": "question" ,
+      "mywork" :  "my work"  
+    }
   },
  "hero": {
   "title": "Elevate Your Brand with AIMedia Solutions 🚀",

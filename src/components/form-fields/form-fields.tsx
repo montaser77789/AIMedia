@@ -4,6 +4,7 @@ import TextField from "./text-field";
 import Checkbox from "./checkbox";
 import { InputTypes } from "../constants/enum";
 import { validationErrors } from "@/validation/auth";
+import TextareaField from "./TextareaF-ield";
 
 interface Props extends IFormField {
   error: validationErrors;
@@ -23,7 +24,9 @@ const FormFields = (props: Props) => {
     if (type === InputTypes.CHECKBOX) {
       return <Checkbox {...props} checked={Boolean(props.checked)} />;
     }
-    
+    if (type === InputTypes.TEXTAREA) {
+      return <TextareaField {...props} />;
+    }
 
     return <TextField {...props} />;
   };

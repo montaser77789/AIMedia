@@ -20,7 +20,7 @@ const Footer = () => {
       title: "Company",
       links: [
         
-        { name: "Portfolio", href: Routes.PORTFOLIO },
+        { name: "OURWORK", href: Routes.OURWORK },
         { name: "Blog", href: Routes.BLOG },
       ],
     },

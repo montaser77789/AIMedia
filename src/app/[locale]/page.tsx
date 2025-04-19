@@ -6,6 +6,7 @@ import AmazingServices from "./_components/Services/AmazingServices";
 import { QuestionSection } from "./_components/QuestionSection";
 import PartnersSection from "./_components/PartnersSection";
 import HeroSection from "./_components/HeroSection";
+import OurWorkSection from "./_components/our-work/OurWorkSection";
 
 export default async function Home() {
   const locale = await getCurrentLocale();
@@ -17,6 +18,7 @@ export default async function Home() {
       <TeamSection />
       <AmazingServices />
       <PartnersSection />
+      <OurWorkSection  />
       <QuestionSection />
     </div>
   );

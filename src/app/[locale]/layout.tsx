@@ -5,6 +5,8 @@ import { Locale } from "@/i18n.config";
 import { Directions, Languages } from "@/components/constants/enum";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Toaster } from "@/components/ui/sonner";
+
 
 const robote = Roboto({
   subsets: ["latin"],
@@ -37,6 +39,7 @@ export default async function RootLayout({
       <body className={robote.className}>
 
           <Header />
+          <Toaster />
 
           {children}
           <Footer />

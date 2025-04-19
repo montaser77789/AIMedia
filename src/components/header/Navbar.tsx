@@ -27,8 +27,8 @@ const Navbar = ({ translations }: { translations: Translations }) => {
 
     {
       id: crypto.randomUUID(),
-      title: translations.navbar.protofolio,
-      href: Routes.PORTFOLIO,
+      title: translations.navbar.ouserwork,
+      href: Routes.OURWORK,
     },
     {
       id: crypto.randomUUID(),

@@ -1,12 +1,17 @@
 export type Translations = {
   navbar: {
-
     services: string;
     home: string;
-    protofolio: string;
+    ouserwork: string;
     blog: string;
     contact: string;
-    socialmedia: string
+    socialmedia: string;
+  };
+  admin: {
+    tabs: {
+      question: string;
+      mywork :  string
+    };
   };
   hero: {
     title: string;
