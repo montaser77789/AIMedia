@@ -6,6 +6,7 @@ import { Directions, Languages } from "@/components/constants/enum";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Toaster } from "@/components/ui/sonner";
+import NextAuthSessionProvider from "../providers/NextAuthSessionProvider";
 
 
 const robote = Roboto({
@@ -37,12 +38,14 @@ export default async function RootLayout({
       dir={local === Languages.ARABIC ? Directions.RTL : Directions.LTR}
     >
       <body className={robote.className}>
+<NextAuthSessionProvider>
 
           <Header />
           <Toaster />
 
           {children}
           <Footer />
+</NextAuthSessionProvider>
       </body>
     </html>
   );
