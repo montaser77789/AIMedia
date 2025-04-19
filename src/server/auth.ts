@@ -1,4 +1,4 @@
-import { Environments, Pages, Routes } from "@/components/constants/enum";
+import {  Pages, Routes } from "@/components/constants/enum";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { NextAuthOptions } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
@@ -11,7 +11,7 @@ import { login } from "./_action/auth";
     maxAge: 7 * 24 * 60 * 60,
     updateAge: 24 * 60 * 60,
   },
-  debug: process.env.NODE_ENV === Environments.DEV,
+  debug: true,
   secret: process.env.NEXTAUTH_SECRET,
   providers: [
     Credentials({
