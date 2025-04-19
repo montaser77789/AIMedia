@@ -33,7 +33,7 @@ const TeamSection = () => {
   return (
     <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute top-0 right-0 w-full md:w-[60%] h-full bg-gradient-to-r from-white to-[#B3E8FF] z-0 rounded-xl" />
+      <div className="absolute top-0 left-0 w-full md:w-[60%] h-full bg-gradient-to-r from-[#f7d9fb] to-white z-0" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-black relative">
         {/* Section title */}

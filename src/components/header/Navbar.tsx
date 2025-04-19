@@ -58,11 +58,10 @@ const Navbar = ({ translations }: { translations: Translations }) => {
         <Menu className="!w-6 !h-6" />
       </Button>
       <ul
-        className={`fixed lg:static ${
-          openMenu ? "left-0 z-50 !w-3/4" : "-left-full"
-        } top-0 z-50 px-10 py-20 lg:p-0 bg-gradient-to-br from-[#1e3a8a] via-[#6d28d9] to-[#ec4899]
-         md:bg-none transition-all duration-200 h-full lg:h-auto flex-col lg:flex-row w-full lg:w-auto flex items-start lg:items-center gap-10`}
-      >
+  className={`fixed lg:static ${
+    openMenu ? "top-0 z-50 !h-3/4" : "-top-full"
+  } left-0 z-50 px-10 py-20 lg:p-0 bg-black md:bg-none transition-all duration-200 w-full lg:w-auto flex-col lg:flex-row flex items-center justify-center gap-10`}
+>
         {/* Close button */}
         <Button
           variant="secondary"
@@ -81,7 +80,7 @@ const Navbar = ({ translations }: { translations: Translations }) => {
               className={`font-semibold hover:text-primary duration-200 transition-colors ${
                 pathname === `/${locale}/${link.href}`
                   ? "text-primary"
-                  : "text-black"
+                  : "text-white"
               }`}
               href={`/${locale}/${link.href}`}
             >
